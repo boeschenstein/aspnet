@@ -36,6 +36,8 @@ public async Task DownloadBots()
 
 ### CSV using CSVHelper (stream only, no files)
 
+Inspired from <https://stackoverflow.com/questions/13646105/csvhelper-not-writing-anything-to-memory-stream/22997765#22997765>
+
 ```cs
 [HttpGet]
 [ProducesResponseType(StatusCodes.Status200OK)]
