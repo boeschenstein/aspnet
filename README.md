@@ -1,5 +1,15 @@
 # ASP.NET
 
+## Move Controllers to other project/assembly
+
+```cs
+var presentationAssembly = typeof(PresentationProj.AssemblyReference).Assembly;
+services.AddControllers().AddApplicationPart(presentationAssembly);
+```
+
+- Source: <https://youtu.be/tLk4pZZtiDY> Min 11:20
+- Docs: <https://learn.microsoft.com/en-us/aspnet/core/mvc/advanced/app-parts?view=aspnetcore-7.0>
+
 ## File Download
 
 ### Zip, using efficiant streams
